@@ -1,0 +1,68 @@
+{
+	"navigation":{
+		"links":[
+			{
+				"name":"Strona Główna",
+				"url":""
+			},
+			{
+				"name":"Kursy",
+				"url":"/kursy",
+				"sublist":{
+					"polish":{
+						"name":"Język Polski",
+						"url":"/kursy/jezyk_polski"
+					},
+					"english":{
+						"name":"Język Angielski",
+						"url":"/kursy/jezyk_angielski"
+					}
+				}
+			},
+			{
+				"name":"Cennik",
+				"url":"/cennik"
+			},
+			{
+				"name":"Centrum wiedzy",
+				"url":"/faq"
+			},
+			{
+				"name":"Panel ucznia",
+				"url":""
+			},
+			{
+				"name":"O nas",
+				"url":"/o_nas"
+			},
+			{
+				"name":"Kontakt",
+				"url":"/kontakt"
+			}
+		]
+	},
+	"home_banner":{
+		"slides":[
+			{
+				"title":"test",
+				"subtitle":"test",
+				"url":"/kursy"
+			},
+			{
+				"title":"test",
+				"subtitle":"",
+				"url":"/cennik"
+			},
+			{
+				"title":"test",
+				"subtitle":"",
+				"url":"./media/banner.png"
+			},
+			{
+				"title":"test",
+				"subtitle":"",
+				"url":"./media/banner.png"
+			}
+		]
+	}
+}

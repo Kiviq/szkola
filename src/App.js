@@ -1,26 +1,39 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
+import React, { Component } from 'react';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import Header from './components/Header';
+import owl from './media/sowa.png';
+import styles from './App.css';
+import Home from './components/Home';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <BrowserRouter>
+        <div className="App">
+        <div className="lines"></div>
+        <img className="owl" src={owl}/>
+          <Header/>
+          <div className="page-content">
+            <Switch>
+              <Route path='/' exact component={Home}/>
+              
+            </Switch>
+          </div>
+        </div>
+      </BrowserRouter>
   );
 }
 
 export default App;
+
+
+
+// {window.location.pathname !== '/onepage' && <Header />}
+          // {window.location.pathname === '/onepage' && <HeaderAll />}
+          // <div className="page-content">
+          //   <Switch>
+          //     // <Route path='/onepage' exact component={HomeAll}/>
+          //     <Route path='/' exact component={HomeAll}/>
+          //     <Route path='/skills' exact component={Skills}/>
+          //     <Route path='/contact' exact component={Contact}/>
+          //   </Switch>
+          // </div>
+          // < Footer />

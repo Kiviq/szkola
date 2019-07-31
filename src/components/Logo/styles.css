@@ -1,0 +1,19 @@
+.logo{
+	padding-left: 50px;
+    font-size: 72px;
+    width: 200px;
+    position: relative;
+    text-align: center;
+}
+/*.edu{
+	position: absolute;
+    top: 50%;
+    left: 53%;
+    transform: translate(-50%,-27%) rotate(-25deg);
+}
+.pro{
+	position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%,-50%) rotate(-20deg);
+}*/
