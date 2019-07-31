@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import BannerImg from '../../../media/banner.jpg';
 import styles from './styles.css';
+import { Link } from 'react-router-dom';
 
 class Slide extends Component {
 	constructor(props){
@@ -18,7 +19,7 @@ class Slide extends Component {
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse volutpat vestibulum velit, at posuere mauris molestie eu. Pellentesque maximus iaculis pellentesque. 
 				</p>
 
-				<a href={this.props.url} className="slide_button" >Sprawdź</a>
+				<Link to={this.props.url} className='slide_button'>Sprawdź </Link>
 			</div>
 		);
 	}

@@ -41,27 +41,43 @@
 			}
 		]
 	},
+	"opinions":[
+		{
+			"who": "James Bond",
+			"content": "Turbo opór zajebiste",
+			"stars":3	
+		},
+		{
+			"who": "Darth Vader",
+			"content": "Dzięki kursom z matematyki zbudowałem gwiazdę śmierci",
+			"stars":3	
+		}
+	],
 	"home_banner":{
 		"slides":[
 			{
 				"title":"test",
 				"subtitle":"test",
+				"image":"o_nas",
 				"url":"/kursy"
 			},
 			{
 				"title":"test",
 				"subtitle":"",
+				"image":"o_nas",
 				"url":"/cennik"
 			},
 			{
 				"title":"test",
 				"subtitle":"",
-				"url":"./media/banner.png"
+				"image":"/o_nas",
+				"url": "/o_nas"
 			},
 			{
 				"title":"test",
 				"subtitle":"",
-				"url":"./media/banner.png"
+				"image":"/logowanie",
+				"url": "/logowanie"
 			}
 		]
 	}

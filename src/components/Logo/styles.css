@@ -5,6 +5,15 @@
     position: relative;
     text-align: center;
 }
+.logo a{
+    padding-left: 50px;
+    font-size: 72px;
+    width: 200px;
+    color:black;
+    text-decoration: none;
+    position: relative;
+    text-align: center;
+}
 /*.edu{
 	position: absolute;
     top: 50%;

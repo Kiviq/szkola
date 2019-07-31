@@ -1,0 +1,91 @@
+.about {
+    padding-top: 50px;
+}
+
+.about h1 {
+    font-size: 52px;
+}
+
+.about .content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 1280px;
+    margin: auto;
+    position: relative;
+    padding: 30px;
+}
+
+.about .content .image {
+    width: 55%;
+    text-align: right;
+}
+
+.about .content .image img {
+    max-width: 80%;
+}
+
+.about .content .text {
+    width: 35%;
+    background: rgba(255, 255, 255, .8);
+    transform: translate(-10%);
+    padding: 0 25px;
+}
+
+.about .content .text p {
+    text-align: left;
+    line-height: 36px;
+    font-size: 1.5rem;
+}
+
+.about .content:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(220, 218, 218, 0.6);
+    z-index: -1;
+    filter: blur(20px);
+}
+
+.about .content .text h3 {
+    text-align: left;
+    font-size: 3rem;
+    margin: 10px 0;
+    line-height: 4.3rem;
+}
+
+.about_button {
+    position: absolute;
+    top: 93%;
+    left: 61%;
+    transform: translate(-50%,-50%);
+    z-index: 3;
+    background: rgba(47, 187, 47, 1);
+    padding: 10px 23px 15px;
+    color: black;
+    text-decoration: none;
+    line-height: 24px;
+    transition:.5s all;
+    font-size: 24px;
+}
+.about_button.write {
+    left: 78%;
+    background:#40a0f3;
+}
+.about_button:hover{
+    transform:translate(-50%,-30%) scale(1.05);
+}
+.about_button:before {
+    background: #ffffff6e;
+    content: "";
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
