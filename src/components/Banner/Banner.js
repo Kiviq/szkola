@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import JsonData from '../../data.json';
-import Slide from './Slide';
+import Slide from './Slide/Slide.js';
 import styles from './styles.css';
 class Banner extends Component {
 	

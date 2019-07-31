@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import Header from './components/Header';
+import Header from './components/Header/Header.js';
 import owl from './media/sowa.png';
 import styles from './App.css';
-import Home from './components/Home';
+import Home from './components/Home/Home.js';
+// import About from'./components/About/About.js';
 function App() {
   return (
    <BrowserRouter>

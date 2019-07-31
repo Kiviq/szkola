@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import JsonData from '../../data.json';
-import Course from './Course';
+import Course from './Course/Course.js';
 class Courses extends Component {
 	render() {
 		const renderCourses = JsonData.home_banner.slides.map((el, ind)=>{

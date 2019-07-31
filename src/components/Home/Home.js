@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import Banner from '../Banner';
-import Courses from '../Courses';
+import Banner from '../Banner/Banner.js';
+import Courses from '../Courses/Courses.js';
 class Home extends Component {
 	render() {
 		return (

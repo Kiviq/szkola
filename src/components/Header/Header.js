@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import Logo from '../Logo';
-import Nav from '../Nav';
+import Logo from '../Logo/Logo.js';
+import Nav from '../Nav/Nav.js';
 import styles from './style.css';
 class Header extends Component {
 	render() {
