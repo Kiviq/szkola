@@ -14,6 +14,14 @@
     position: relative;
     text-align: center;
 }
+@media (max-width:1110px){
+    .logo a{
+        padding-left:0;
+    }
+    .logo{
+        padding-left:10px;
+    }
+}
 /*.edu{
 	position: absolute;
     top: 50%;

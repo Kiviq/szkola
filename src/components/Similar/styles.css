@@ -1,0 +1,37 @@
+
+ .similar_cont {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.similar_course {
+    max-width: 32%;
+    margin-right: 1%;
+}
+
+.similar_course_img img {
+    width: 100%;
+    max-height: 330px;
+}
+
+.similar_cont h3 {
+    width: 100%;
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.similar_course h3 {
+    font-size: 22px;
+    font-weight: normal;
+}
+
+.similar_course a {
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    background: black;
+    padding: 15px 40px;
+}

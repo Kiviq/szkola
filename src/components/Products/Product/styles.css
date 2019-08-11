@@ -1,0 +1,67 @@
+
+.product {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.product_content {
+    width: 50%;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.product_content ul{
+	list-style: none;
+	padding: 0;
+	text-align: left;
+}
+.product_background {
+    width: 50%;
+}
+.product_background.left{
+	order:1;
+}
+.product_background.right{
+	order:2;
+}
+.product_content.left{
+	order:1;
+}
+.product_content.right{
+	order:2;
+}
+.product_background img {
+    width: 100%;
+}
+
+.product_title {
+    width: 100%;
+}
+.product_content .description {
+    font-size: 21px;
+    max-width: 80%;
+    margin: auto;
+}
+
+.product_content h3 {
+    font-size: 34px;
+    margin-bottom: 15px;
+}
+
+.go_to_course {
+        padding: 20px 50px;
+    background: #64b163;
+    color: white;
+    text-decoration: none;
+    margin-top: 17px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: .5s all;
+}
+.go_to_course:hover {transform: scale(1.1);background: black;}

@@ -1,0 +1,106 @@
+.op_cont {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 50px 0;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.opinions {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: space-evenly;
+    width:100%;
+}
+
+.opinions .opinion {
+    background: white;
+    padding: 50px;
+    min-width: 30%;
+    transition:1.5s all;
+    -webkit-box-shadow: 0px 0px 51px -1px rgba(0,0,0,0.36);
+    -moz-box-shadow: 0px 0px 51px -1px rgba(0,0,0,0.36);
+    box-shadow: 0px 0px 51px -1px rgba(0,0,0,0.36);
+}
+.opinions .header{
+    width:100%;
+    font-size:52px;
+}
+.opinions .opinion h5 {
+    font-size: 1.5rem;
+}
+
+.opinions .opinion_content {
+    font-size: 1.2rem;
+    font-style: italic;
+    max-width: 350px;
+    margin: 20px auto;
+    min-height: 60px;
+}
+
+.opinion_content {
+  quotes: "“" "”" "‘" "’";
+}
+.opinion_content:before {
+    content: open-quote;
+}
+.opinion_content:after {
+    content: close-quote;
+}
+
+
+.opinion_img img {
+    max-width: 180px;
+    opacity: 0;
+}
+
+.opinion_img {
+    border-radius: 100%;
+    overflow: hidden;
+    max-width: 160px;
+    margin: 0 auto;
+    background: url('/static/media/vader.aef6f4ce.jpeg');
+    background-size: contain;
+    background-position: center center;
+}
+
+
+@media (min-width:1240px){
+    .opinions .opinion.dummy {
+        opacity: 0;
+    }
+    .opinions .opinion:not(.dummy){
+        position:absolute;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+
+    }
+    .opinions .opinion:not(.dummy).left{
+        transform:translate(-70vw,-50%);
+    }
+    .opinions .opinion:not(.dummy).right{
+        transform: translate(70vw,-50%);
+    }
+    .opinions .opinion:not(.dummy).left.active{
+        transform:translate(-105%,-50%);
+    }
+    .opinions .opinion:not(.dummy).right.active{
+        transform: translate(10%,-50%);
+    }
+    .opinions .opinion:not(.dummy).left.up{
+        transform:translate(-105%, -200%);
+    }
+    .opinions .opinion:not(.dummy).right.up{
+        transform:translate(10%, -200%);
+    }
+
+}

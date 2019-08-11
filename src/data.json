@@ -8,17 +8,18 @@
 			{
 				"name":"Kursy",
 				"url":"/kursy",
-				"sublist":{
-					"polish":{
+				"sublist":[
+					{
 						"name":"Język Polski",
 						"url":"/kursy/jezyk_polski"
 					},
-					"english":{
+					{
 						"name":"Język Angielski",
 						"url":"/kursy/jezyk_angielski"
 					}
-				}
+				]
 			},
+
 			{
 				"name":"Cennik",
 				"url":"/cennik"
@@ -41,14 +42,95 @@
 			}
 		]
 	},
+	"footer":{
+		"links":[
+			{
+				"name":"Strona Główna",
+				"url":"",
+				"sublist":[]
+			},
+			{
+				"name":"Regulamin",
+				"url":"/regulamin",
+				"sublist":[]
+			},
+
+			{
+				"name":"Polityka Prywatności",
+				"url":"/polityka_prywatnosci",
+				"sublist":[]
+			},
+			{
+				"name":"Kursy",
+				"url":"/kursy",
+				"sublist":[
+					{
+						"name":"Język Polski",
+						"url":"/kursy/jezyk_polski"
+					},
+					{
+						"name":"Język Angielski",
+						"url":"/kursy/jezyk_angielski"
+					}
+				]
+			},
+
+			{
+				"name":"Cennik",
+				"url":"/cennik",
+				"sublist":[]
+			},
+			{
+				"name":"Centrum wiedzy",
+				"url":"/faq",
+				"sublist":[]
+			},
+			{
+				"name":"Panel ucznia",
+				"url":"",
+				"sublist":[]
+			},
+			{
+				"name":"O nas",
+				"url":"/o_nas",
+				"sublist":[]
+			},
+			{
+				"name":"Kontakt",
+				"url":"/kontakt",
+				"sublist":[]
+			}
+
+		]
+	},
 	"opinions":[
 		{
-			"who": "James Bond",
+			"who": "Dummy",
+			"handler":"bond",
 			"content": "Turbo opór zajebiste",
-			"stars":3	
+			"stars":5	
+		},
+		{
+			"who": "James Bond",
+			"handler":"bond",
+			"content": "Turbo opór zajebiste",
+			"stars":5	
+		},
+		{
+			"who": "James Bond",
+			"handler":"bond",
+			"content": "Turbo opór zajebiste",
+			"stars":5	
+		},
+		{
+			"who": "James Bond",
+			"handler":"bond",
+			"content": "Turbo opór zajebiste",
+			"stars":5	
 		},
 		{
 			"who": "Darth Vader",
+			"handler":"vader",
 			"content": "Dzięki kursom z matematyki zbudowałem gwiazdę śmierci",
 			"stars":3	
 		}
@@ -56,29 +138,138 @@
 	"home_banner":{
 		"slides":[
 			{
-				"title":"test",
-				"subtitle":"test",
-				"image":"o_nas",
-				"url":"/kursy"
+				"title":"slide_1",
+				"subtitle":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse volutpat vestibulum velit, at posuere mauris molestie eu. Pellentesque maximus iaculis pellentesque. ",
+				"handle":"banner",
+				"fileFormat":"jpg",
+				"url":"/kursy",
+				"bg_color":"black"
 			},
 			{
-				"title":"test",
-				"subtitle":"",
-				"image":"o_nas",
-				"url":"/cennik"
+				"title":"slide_2",
+				"subtitle":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse volutpat vestibulum velit, at posuere mauris molestie eu. Pellentesque maximus iaculis pellentesque. ",
+				"handle":"math",
+				"fileFormat":"jpeg",
+				"url":"/cennik",
+				"bg_color":"black"
 			},
 			{
-				"title":"test",
-				"subtitle":"",
-				"image":"/o_nas",
-				"url": "/o_nas"
+				"title":"slide_3",
+				"subtitle":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse volutpat vestibulum velit, at posuere mauris molestie eu. Pellentesque maximus iaculis pellentesque. ",
+				"handle":"polish",
+				"fileFormat":"jpeg",
+				"url": "/o_nas",
+				"bg_color":"black"
 			},
 			{
-				"title":"test",
-				"subtitle":"",
-				"image":"/logowanie",
-				"url": "/logowanie"
+				"title":"slide_4",
+				"subtitle":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse volutpat vestibulum velit, at posuere mauris molestie eu. Pellentesque maximus iaculis pellentesque. ",
+				"handle":"banner",
+				"fileFormat":"jpg",
+				"url": "/logowanie",
+				"bg_color":"black"
 			}
 		]
-	}
+	},
+	"courses_banner":{
+		"slides":[
+			{
+				"title":"Nowy nabór",
+				"subtitle":"Dołącz do elity Języka Polskiego już teraz!",
+				"handle":"polish",
+				"fileFormat":"jpeg",
+				"url":"/kursy/jezyk_polski",
+				"bg_color":"black"
+			},
+			{
+				"title":"slide_2",
+				"subtitle":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse volutpat vestibulum velit, at posuere mauris molestie eu. Pellentesque maximus iaculis pellentesque. ",
+				"handle":"math",
+				"fileFormat":"jpeg",
+				"url":"/kursy/matematyka",
+				"bg_color":"black"
+			},
+			{
+				"title":"slide_3",
+				"subtitle":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse volutpat vestibulum velit, at posuere mauris molestie eu. Pellentesque maximus iaculis pellentesque. ",
+				"handle":"polish",
+				"fileFormat":"jpeg",
+				"url": "/o_nas",
+				"bg_color":"black"
+			},
+			{
+				"title":"slide_4",
+				"subtitle":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse volutpat vestibulum velit, at posuere mauris molestie eu. Pellentesque maximus iaculis pellentesque. ",
+				"handle":"banner",
+				"fileFormat":"jpg",
+				"url": "/logowanie",
+				"bg_color":"black"
+			}
+		]
+	},
+	"courses":[
+		{
+			"name":"Język Polski",
+			"handler":"polish",
+			"fileFormat":"jpeg",
+			"descritpion":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam commodo et magna nec ornare. Nam semper vestibulum velit, sit amet vehicula diam sagittis eu. Sed blandit, lectus at tempus cursus, diam nibh accumsan urna, eget aliquam sem orci sed nisl. Aenean tellus nulla, aliquet ac lacinia eget, vulputate ut tortor. Nam aliquet feugiat leo eu volutpat. Etiam faucibus magna mauris, posuere tristique risus placerat in. Duis pretium eros a erat consequat, quis aliquet ex congue. Sed bibendum dolor eget efficitur lobortis. Praesent in purus et justo consectetur cursus tristique ac arcu. Cras scelerisque in risus eu malesuada. Sed quis vulputate lacus. Maecenas consectetur lacus eu ligula vestibulum, in dignissim quam mattis. Aenean sed ante ac massa maximus laoreet in ut neque. Sed ac fermentum quam.",
+			"url":"/kursy/jezyk_polski",
+			"perks":[
+				"Zajęcia mają na celu przygotowanie do egzaminu maturalnego zarówno na poziomie podstawowym jak i rozszerzonym.",
+				"Systematyzujemy dotychczasową wiedzę z zakresu teorii literatury.","Systematyzujemy wiedzę z zakresu znajomości epok literackich.",
+				"Systematyzujemy wiedzę z zakresu motywów występujących w tekstach kultury",
+				"Doskonalimy umiejętność tworzenia wypowiedzi pisemnych takich jak: rozprawka oraz analiza utworu poetyckiego ( poziom podstawowy), jak i tworzenia wypowiedzi problemowej i analizy porównawczej tekstów literackich.",
+				"Doskonalimy umiejętność czytania ze zrozumieniem tekstu (literackiego, naukowego, publicystycznego)",
+				"Pracujemy z arkuszami maturalnymi i innymi materiałami CKE",
+				"Przygotowujemy do matury ustnej",
+				"Przewidziane są w trakcie kursu pisemne i ustne matury próbne."
+			]
+		},
+		{
+			"name":"Matematyka",
+			"handler":"math",
+			"fileFormat":"jpeg",
+			"descritpion":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam commodo et magna nec ornare. Nam semper vestibulum velit, sit amet vehicula diam sagittis eu. Sed blandit, lectus at tempus cursus, diam nibh accumsan urna, eget aliquam sem orci sed nisl. Aenean tellus nulla, aliquet ac lacinia eget, vulputate ut tortor. Nam aliquet feugiat leo eu volutpat. Etiam faucibus magna mauris, posuere tristique risus placerat in. Duis pretium eros a erat consequat, quis aliquet ex congue. Sed bibendum dolor eget efficitur lobortis. Praesent in purus et justo consectetur cursus tristique ac arcu. Cras scelerisque in risus eu malesuada. Sed quis vulputate lacus. Maecenas consectetur lacus eu ligula vestibulum, in dignissim quam mattis. Aenean sed ante ac massa maximus laoreet in ut neque. Sed ac fermentum quam.",
+			"url":"/kursy/matematyka",
+			"perks":[
+				"Zajęcia mają na celu przygotowanie do egzaminu maturalnego zarówno na poziomie podstawowym jak i rozszerzonym.",
+				"Systematyzujemy dotychczasową wiedzę z zakresu teorii literatury.","Systematyzujemy wiedzę z zakresu znajomości epok literackich.",
+				"Systematyzujemy wiedzę z zakresu motywów występujących w tekstach kultury",
+				"Doskonalimy umiejętność tworzenia wypowiedzi pisemnych takich jak: rozprawka oraz analiza utworu poetyckiego ( poziom podstawowy), jak i tworzenia wypowiedzi problemowej i analizy porównawczej tekstów literackich.",
+				"Doskonalimy umiejętność czytania ze zrozumieniem tekstu (literackiego, naukowego, publicystycznego)",
+				"Pracujemy z arkuszami maturalnymi i innymi materiałami CKE",
+				"Przygotowujemy do matury ustnej",
+				"Przewidziane są w trakcie kursu pisemne i ustne matury próbne."
+			]
+		},
+		{
+			"name":"Język Angielski",
+			"handler":"english",
+			"fileFormat":"jpeg",
+			"descritpion":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam commodo et magna nec ornare. Nam semper vestibulum velit, sit amet vehicula diam sagittis eu. Sed blandit, lectus at tempus cursus, diam nibh accumsan urna, eget aliquam sem orci sed nisl. Aenean tellus nulla, aliquet ac lacinia eget, vulputate ut tortor. Nam aliquet feugiat leo eu volutpat. Etiam faucibus magna mauris, posuere tristique risus placerat in. Duis pretium eros a erat consequat, quis aliquet ex congue. Sed bibendum dolor eget efficitur lobortis. Praesent in purus et justo consectetur cursus tristique ac arcu. Cras scelerisque in risus eu malesuada. Sed quis vulputate lacus. Maecenas consectetur lacus eu ligula vestibulum, in dignissim quam mattis. Aenean sed ante ac massa maximus laoreet in ut neque. Sed ac fermentum quam.",
+			"url":"/kursy/jezyk_angielski",
+			"perks":[
+				"Zajęcia mają na celu przygotowanie do egzaminu maturalnego zarówno na poziomie podstawowym jak i rozszerzonym.",
+				"Systematyzujemy dotychczasową wiedzę z zakresu teorii literatury.","Systematyzujemy wiedzę z zakresu znajomości epok literackich.",
+				"Systematyzujemy wiedzę z zakresu motywów występujących w tekstach kultury",
+				"Doskonalimy umiejętność tworzenia wypowiedzi pisemnych takich jak: rozprawka oraz analiza utworu poetyckiego ( poziom podstawowy), jak i tworzenia wypowiedzi problemowej i analizy porównawczej tekstów literackich.",
+				"Doskonalimy umiejętność czytania ze zrozumieniem tekstu (literackiego, naukowego, publicystycznego)",
+				"Pracujemy z arkuszami maturalnymi i innymi materiałami CKE",
+				"Przygotowujemy do matury ustnej",
+				"Przewidziane są w trakcie kursu pisemne i ustne matury próbne."
+			]
+		}
+	],
+	"statics":[
+		{
+			"title":"Regulamin",
+			"url":"/regulamin",
+			"content":" Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in laoreet turpis, et interdum tortor. In sagittis leo in lectus rutrum, efficitur finibus augue vehicula. In sit amet nibh ante. Morbi sagittis urna a neque porttitor placerat. Proin gravida enim eu vulputate maximus. Vestibulum a justo id justo pharetra ultricies ut sit amet ex. Sed faucibus quam in erat venenatis vehicula. Integer sed dui efficitur, suscipit ipsum non, gravida nunc. Mauris congue neque nec interdum malesuada. Maecenas sit amet turpis vel arcu fringilla eleifend et sed nunc. Proin leo tortor, scelerisque eu fermentum vel, consequat eu nunc. Aliquam fringilla enim mattis viverra feugiat. Nulla non lacus augue. Vestibulum gravida, elit eu semper blandit, enim purus tincidunt metus, eget tempor orci eros ac nisl. Nam nec enim eu justo pretium commodo in et elit. Suspendisse ut rutrum urna. Proin rutrum vitae justo eget porta. Vivamus aliquam quam vitae turpis facilisis, viverra malesuada velit gravida. Nulla id eros et magna blandit egestas. Nulla facilisi. Donec congue sapien elit. Morbi ut nibh id tellus porta ornare sed nec risus. Cras id laoreet nulla. Suspendisse finibus sed lacus ac feugiat. Nullam eu ipsum dignissim, molestie lacus quis, viverra ipsum. Etiam eget risus libero. Sed luctus a ipsum non semper. Etiam sem erat, congue vel pharetra sit amet, ultricies non felis. Donec a est lorem. Mauris mattis odio nec dui iaculis pellentesque. Integer ante nulla, consectetur quis ullamcorper quis, posuere vel sapien. Ut ac eros porttitor, venenatis lacus at, mollis felis. Sed magna magna, rhoncus quis vehicula eleifend, maximus vitae elit. Vivamus sem lectus, ullamcorper ut lorem vel, efficitur ultrices mi. Morbi suscipit urna at enim gravida efficitur. Fusce porttitor leo eu rhoncus posuere. Suspendisse potenti. Etiam congue aliquet ornare. Proin mollis mi in nisi pharetra auctor. Phasellus consectetur feugiat dolor, id tristique ante mollis ut. Donec non urna quam. Mauris id tincidunt lacus, faucibus venenatis felis. Praesent faucibus ante ac dolor elementum congue. Curabitur dictum urna nec congue pharetra. Suspendisse sollicitudin magna in odio accumsan, quis convallis neque tempor. Vivamus lacus erat, tristique scelerisque blandit at, finibus in lacus. Praesent dictum suscipit ipsum non eleifend. Donec lorem elit, pellentesque pharetra urna in, euismod blandit lacus. Ut nec sollicitudin mauris. Mauris nulla enim, luctus nec nisi eu, suscipit feugiat ligula. Donec suscipit turpis quis sem sollicitudin tempus. Sed velit lorem, dignissim nec tellus sed, luctus commodo lorem."
+		}
+	]
 }
+
+
+
+
+
